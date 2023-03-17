@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  
+  body {
+    margin: 0 auto;
+    padding: 24px;
+    max-width: 1360px;
+    width: 100%;
+    background-color: #e5e5e5;
+    color: #161346;
+  }
+  
+  header {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    /* position: sticky;
+    top: 10px;
+    left: 10px;
+    width: 100%; */
+    background: #e5e5e5;
+  }
+
+  a:link {
+    color : black;
+  }
+  a:visited {
+    color : black;
+  }
+  a:hover {
+    color : blue;
+  }
+  a:active {
+    color : green
+  }
+  
+  .logo {
+    font-weight: 500;
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+    line-height: 30px;
+  }
+  
+  .logo .accent {
+    font-weight: 700;
+  }
+  
+  ul.menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  
+  ul.menu > li {
+    display: block;
+  }
+  
+  .menu {
+    color: #717f8e;
+  }
+  
+  .menu > .active {
+    color: #161346;
+    font-weight: 800;
+  }
+  
+  .site.menu {
+    flex: 1 1 auto;
+  }
+
+  .menu-link {
+    text-decoration: none;
+  }
+  
+  main {
+    display: grid;
+    margin: 24px 0;
+    grid-template-areas:
+      'g1 g2'
+      'g3 g3';
+    grid-template-columns: 450px minmax(450px, 1fr);
+    grid-template-rows: 500px 500px;
+    gap: 24px;
+  }
+  
+  section {
+    padding: 32px;
+    border-radius: 16px;
+    background-color: #ffffff;
+  }
+  
+  .history {
+    grid-area: g1;
+  }
+
+  .license {
+    grid-area: g2;
+  }
+
+  .sec3 {
+    grid-area: g3;
+    background-image: url('img/baekyeong.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .detail {
+    position: relative;
+  }
+  
+  .history-title {
+    margin: 10px 48px 16px;
+    color: #000000;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+  }
+  
+  table.history-table {
+    margin-top: 24px;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    color: #000000;
+    border-radius: 8px 8px 8px 8px;
+  }
+  
+  table.history-table thead {
+    background: #f9f9fb;
+  }
+  
+  table.history-table thead th {
+    padding: 14px 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+  }
+  
+  table.history-table thead th:first-child {
+    border-radius: 8px 0 0 8px;
+  }
+  
+  table.history-table thead th:last-child {
+    border-radius: 0 8px 8px 0;
+  }
+  
+  table.history-table td {
+    padding: 12px 0;
+  }
+
+
+  .license-title {
+    margin: 10px 48px 16px;
+    color: #000000;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+  }
+  
+  table.license-table {
+    margin-top: 24px;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    color: #000000;
+  }
+  
+  table.license-table thead {
+    background: #f9f9fb;
+  }
+  
+  table.license-table thead th {
+    padding: 14px 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+  }
+  
+  table.license-table thead th:first-child {
+    border-radius: 8px 0 0 8px;
+  }
+  
+  table.license-table thead th:last-child {
+    border-radius: 0 8px 8px 0;
+    text-align: left;
+  }
+  
+  table.license-table td {
+    padding: 12px 0;
+  }
+
+
+  .sec3-title {
+    margin: 10px 48px 16px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+  }
